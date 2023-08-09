@@ -1,6 +1,6 @@
 {
     "title": "yolov8_api",
-    "summary": "add api to yolov8",
+    "summary": "Add deep api to yolov8 model",
     "description": [
 		"yolov8_api is an application using the DEEPaaS API.\n",
         "Write additional information for your users (how to predict, how to retrain,",

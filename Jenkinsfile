@@ -9,7 +9,7 @@ pipeline {
 
     environment {
         dockerhub_repo = "deephdc/deep-oc-yolov8_api"
-        base_cpu_tag = "2.9.1"
+        base_cpu_tag = "1.13.1-cuda11.6-cudnn8-runtime"
         base_gpu_tag = "1.13.1-cuda11.6-cudnn8-runtime"
     }
 
