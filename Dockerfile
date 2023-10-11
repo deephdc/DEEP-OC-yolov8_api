@@ -22,7 +22,7 @@ LABEL version='0.0.1'
 # Add deep api to yolov8 model
 
 # What user branch to clone [!]
-ARG branch=master
+ARG branch=main
 
 # If to install JupyterLab
 ARG jlab=true
@@ -36,7 +36,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get install -y --no-install-recommends \
         gcc \
         git \
+        libgl1\
         curl \
+        libglib2.0-0\
     && rm -rf /var/lib/apt/lists/*
 
 # Update python packages
@@ -88,7 +90,7 @@ RUN if [ "$jlab" = true ]; then \
     else echo "[INFO] Skip JupyterLab installation!"; fi
 
 # Install user app
-RUN git clone -b $branch https://git.scc.kit.edu/se1131/yolov8_api && \
+RUN git clone -b $branch https://git.scc.kit.edu/m-team/ai/yolov8_api.git && \
     cd  yolov8_api && \
     pip3 install --no-cache-dir -e . && \
     cd ..
