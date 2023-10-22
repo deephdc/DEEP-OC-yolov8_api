@@ -3,9 +3,9 @@
 </div>
 
 # DEEP-OC-yolov8_api
-[![Build Status](https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-yolov8_api/master)](https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-yolov8_api/job/master)
+[![Build Status](https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-yolov8_api/main)](https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-yolov8_api/job/main)
 
-This is a container that will run [yolov8_api](https://git.scc.kit.edu/se1131/yolov8_api) application leveraging the DEEP as a Service API component ([DEEPaaS API V2](https://github.com/indigo-dc/DEEPaaS)).
+This is a container that will run [yolov8_api](https://github.com/deephdc/yolov8_api) application leveraging the DEEP as a Service API component ([DEEPaaS API V2](https://github.com/indigo-dc/DEEPaaS)).
 
     
 ## Running the container
@@ -38,7 +38,7 @@ If you want to use Nvidia GPU, you need nvidia-docker and docker-compose ver1.19
 ### Building the container
 If you want to build the container directly in your machine (because you want to modify the `Dockerfile` for instance) follow the following instructions:
 ```bash
-git clone https://git.scc.kit.edu/se1131/DEEP-OC-yolov8_api
+git clone https://github.com/deephdc/DEEP-OC-yolov8_api
 cd DEEP-OC-yolov8_api
 docker build -t deephdc/deep-oc-yolov8_api .
 docker run -ti -p 5000:5000 -p 6006:6006 -p 8888:8888 deephdc/deep-oc-yolov8_api
