@@ -23,7 +23,7 @@ pipeline {
         stage('Docker image building') {
             when {
                 anyOf {
-                    branch 'master'
+                    branch 'main'
                     branch 'test'
                     buildingTag()
                 }
@@ -39,7 +39,7 @@ pipeline {
                         // build different tags
                         id = "${env.dockerhub_repo}"
 
-                        if (env.BRANCH_NAME == 'master') {
+                        if (env.BRANCH_NAME == 'main') {
                            // CPU (aka latest, i.e. default)
                            id_cpu = DockerBuild(id,
                                             tag: ['latest', 'cpu'],
@@ -85,7 +85,7 @@ pipeline {
         stage('Docker Hub delivery') {
             when {
                 anyOf {
-                   branch 'master'
+                   branch 'main'
                    branch 'test'
                    buildingTag()
                }
