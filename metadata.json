@@ -8,7 +8,9 @@
     ],
     "keywords": [
         "docker",
-        "api-v2"
+        "api-v2",
+        "general purpose",
+        "image"
     ],
     "license": "MIT",
     "date_creation": "2023-08-09",
