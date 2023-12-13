@@ -22,7 +22,7 @@ LABEL version='0.0.1'
 # Add deep api to yolov8 model
 
 # What user branch to clone [!]
-ARG branch=master
+ARG branch=test
 
 # If to install JupyterLab
 ARG jlab=true
