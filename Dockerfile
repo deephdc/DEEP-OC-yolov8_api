@@ -88,7 +88,7 @@ RUN if [ "$jlab" = true ]; then \
     else echo "[INFO] Skip JupyterLab installation!"; fi
 
 # Install user app
-RUN git clone -b $branch https://git.scc.kit.edu/se1131/yolov8_api && \
+RUN git clone -b $branch  https://github.com/deephdc/yolov8_api.git && \
     cd  yolov8_api && \
     pip3 install --no-cache-dir -e . && \
     cd ..
