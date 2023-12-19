@@ -1,25 +1,40 @@
 {
-    "title": "yolov8_api",
-    "summary": "Add deep api to yolov8 model",
+    "title": "YoloV8 model",
+    "summary": "Object detection using YoloV8 model",
     "description": [
-		"yolov8_api is an application using the DEEPaaS API.\n",
-        "Write additional information for your users (how to predict, how to retrain,",
-        "dataset description, training description, etc)."
-    ],
+		"Ultralytics YOLOv8 represents the forefront of object detection (segmentation/classification) models incorporating advancements",
+        " from prior YOLO iterations while introducing novel features to enhance performance and versatility.",
+        " YOLOv8 prioritizes speed, precision, and user-friendliness, positioning itself as an exceptional",
+        " solution across diverse tasks such as object detection, tracking, instance segmentation, and",
+        " image classification. Its refined architecture and innovations make it an ideal choice for",
+        " cutting-edge applications in the field of computer vision.\n", 
+        "**References**\n",
+        "[1] Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics (Version 8.0.0) [Computer software]. https://github.com/ultralytics/ultralytics\n",
+        "[2] https://docs.ultralytics.com/\n",
+        "[3] Redmon, J., et al., You Only Look Once: Unified, Real-Time Object Detection, 2015, https://arxiv.org/abs/1506.02640 [cs.CV]"
+    ], 
     "keywords": [
         "docker",
-        "api-v2"
+        "api-v2",
+        "pytorch",
+        "object detection",
+        "trainable",
+        "inference",
+        "pre-trained",
+        "image",
+        "video",
+        "general purpose"
     ],
     "license": "MIT",
     "date_creation": "2023-08-09",
     "sources": {
-		"dockerfile_repo": "https://git.scc.kit.edu/se1131/DEEP-OC-yolov8_api",
+		"dockerfile_repo": "https://codebase.helmholtz.cloud/m-team/ai/deep-oc-yolov8_api/",
 		"docker_registry_repo": "deephdc/deep-oc-yolov8_api",
-		"code": "https://git.scc.kit.edu/se1131/yolov8_api"
+		"code": "https://codebase.helmholtz.cloud/m-team/ai/yolov8_api/"
 	},
     "continuous_integration": {
-        "build_status_badge": "https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-yolov8_api/master",
-        "build_status_url": "https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-yolov8_api/job/master"
+        "build_status_badge": "https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-yolov8_api/main",
+        "build_status_url": "https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-yolov8_api/job/main"
     },
     "tosca": [
         {
