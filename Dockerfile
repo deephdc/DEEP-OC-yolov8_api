@@ -17,7 +17,7 @@ ARG tag=1.13.1-cuda11.6-cudnn8-runtime
 # Base image, e.g. tensorflow/tensorflow:2.9.1
 FROM pytorch/pytorch:${tag}
 
-LABEL maintainer='Fahimeh'
+LABEL maintainer='Fahimeh/ Lisana'
 LABEL version='0.0.1'
 # Add deep api to yolov8 model
 
