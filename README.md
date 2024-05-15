@@ -1,3 +1,8 @@
+---
+# The Repository is ARCHIVED!
+### it is now maintained in https://codebase.helmholtz.cloud/m-team/ai/ai4os-yolov8-torch <br>(mirrored to https://github.com/ai4os-hub/ai4os-yolov8-torch)
+---
+
 <div align="center">
 <img src="https://marketplace.deep-hybrid-datacloud.eu/images/logo-deep.png" alt="logo" width="300"/>
 </div>
